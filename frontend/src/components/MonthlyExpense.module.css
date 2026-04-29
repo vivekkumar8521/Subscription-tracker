@@ -1,0 +1,28 @@
+.card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.amount {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+}
+
+.sublabel {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}

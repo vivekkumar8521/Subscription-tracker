@@ -1,0 +1,16 @@
+target/
+.idea/
+.vscode/
+*.class
+*.log
+application.properties
+
+node_modules/
+frontend/node_modules/
+target/
+dist/
+build/
+.vscode/
+.idea/
+*.log
+.env

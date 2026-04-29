@@ -1,0 +1,90 @@
+.tableWrap {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover td {
+  background: var(--bg-tertiary);
+}
+
+.name {
+  font-weight: 500;
+}
+
+.category {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.amount {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+.editBtn {
+  background: var(--accent-muted);
+  color: var(--accent);
+}
+
+.editBtn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.deleteBtn {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.deleteBtn:hover {
+  background: rgba(248, 81, 73, 0.15);
+  color: var(--danger);
+}
+
+.empty {
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
