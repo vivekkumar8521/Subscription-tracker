@@ -1,4 +1,4 @@
-# AI-Powered Subscription Tracker
+# Subscription Tracker For Managing Online Services
 
 A full-stack application to track, manage, and control auto-pay subscriptions from multiple payment platforms using AI-powered detection.
 
@@ -198,6 +198,4 @@ Subscription Tracker/
 - Check backend logs for connection errors
 - AI service is optional - app works without it
 
-## License
 
-MIT
