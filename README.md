@@ -26,53 +26,6 @@ A full-stack application to track, manage, and control auto-pay subscriptions fr
 - Python 3.9+
 - MySQL 8.0+
 
-## Setup Instructions
-
-### 1. Database Setup
-
-Create MySQL database:
-
-```sql
-CREATE DATABASE subscription_tracker;
-```
-
-Update `backend/src/main/resources/application.properties` with your MySQL credentials:
-
-```properties
-spring.datasource.username=root
-spring.datasource.password=your_password
-```
-
-### 2. Backend Setup
-
-```bash
-cd backend
-.\mvnw.cmd spring-boot:run
-```
-
-Backend runs on `http://localhost:8081`
-
-### 3. AI Service Setup (Optional)
-
-```bash
-cd ai-service
-pip install -r requirements.txt
-python main.py
-```
-
-AI service runs on `http://localhost:8000`
-
-**Note**: The app works without the AI service, but subscription detection from transactions won't be available.
-
-### 4. Frontend Setup
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend runs on `http://localhost:5173`
 
 ## Quick Start Scripts
 
@@ -179,23 +132,15 @@ Subscription Tracker/
 └── ai-service/          # Python FastAPI AI service
     ├── main.py          # AI detection logic
     └── requirements.txt
-```
-
-## Troubleshooting
-
-**Backend won't start:**
-- Check MySQL is running
-- Verify database credentials in `application.properties`
-- Check port 8081 is available
-
-**Frontend can't connect:**
-- Ensure backend is running on port 8081
-- Check `frontend/.env` has correct API URL
-- Verify CORS settings in backend
-
-**AI detection not working:**
-- Ensure AI service is running on port 8000
-- Check backend logs for connection errors
-- AI service is optional - app works without it
 
 
+## Future Enhancements
+AI Expense Prediction
+OCR PDF Scanner
+Voice Assistant
+Mobile App Integration
+Real-Time Notifications
+Machine Learning Insights
+
+## License
+This project is for educational and learning purposes.
